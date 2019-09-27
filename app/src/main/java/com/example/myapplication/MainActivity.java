@@ -82,6 +82,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        bt3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                text.setText(text.getText()+"3");
+
+            }
+        });
+
 
 
 
