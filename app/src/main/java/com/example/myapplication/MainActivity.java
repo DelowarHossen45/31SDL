@@ -270,6 +270,38 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btans.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                var2 = Double.parseDouble(text.getText() + "");
+                if (add == true) {
+                    text.setText(var1 + var2 + "");
+                    add = false;
+                }
+                if (sub == true) {
+                    text.setText(var1 - var2 + "");
+                    sub = false;
+                }
+                if (mul == true) {
+                    text.setText(var1 * var2 + "");
+                    mul = false;
+                }
+                if (div == true) {
+                    text.setText(var1 / var2 + "");
+                    div = false;
+                }
+                if (mod == true) {
+                    if (var2 == 0) {
+                        text.setText("error");
+                    } else {
+                        text.setText(var1 % var2 + "");
+                        mod = false;
+                    }
+                }
+
+            }
+        });
+
 
 
 
