@@ -66,6 +66,15 @@ public class MainActivity extends AppCompatActivity {
                 text.setText(text.getText()+".");
             }
         });
+
+        bt1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                text.setText(text.getText()+"1");
+
+            }
+        });
+
         
 
     }
