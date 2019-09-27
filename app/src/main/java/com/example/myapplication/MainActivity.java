@@ -17,6 +17,40 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        bt1=findViewById(R.id.bt1);
+        btans=findViewById(R.id.btans);
+        bt2=findViewById(R.id.bt2);
+
+        bt3 =findViewById(R.id.bt3);
+
+        bt4=findViewById(R.id.bt4);
+
+        bt5=findViewById(R.id.bt5);
+
+        bt6=findViewById(R.id.bt6);
+
+        bt7=findViewById(R.id.bt7);
+
+        bt8=findViewById(R.id.bt8);
+
+        bt9=findViewById(R.id.bt9);
+
+        bt0=findViewById(R.id.bt0);
+
+        btadd=findViewById(R.id.btadd);
+        btsub=findViewById(R.id.btsub);
+
+        btmul=findViewById(R.id.btmul);
+        btmod=findViewById(R.id.btmod);
+        btdiv=findViewById(R.id.btdiv);
+        btdel=findViewById(R.id.btdel);
+
+        btclc=findViewById(R.id.btclc);
+        btequal=findViewById(R.id.btequal);
+        btfac=findViewById(R.id.btfac);
+        text=findViewById(R.id.text);
     }
 
 }
