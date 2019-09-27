@@ -136,6 +136,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        bt0.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                text.setText(text.getText()+"0");
+
+            }
+        });
+
 
 
 
