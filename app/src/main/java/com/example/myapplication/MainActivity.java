@@ -187,6 +187,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btmod.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(text==null){
+                    text.setText("");
+                }
+                else{
+                    var1=Double.parseDouble(text.getText()+"");
+                    mod=true;
+                    text.setText(null);
+                }
+
+            }
+        });
+
 
 
 
