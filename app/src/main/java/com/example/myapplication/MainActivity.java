@@ -121,6 +121,13 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        bt8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                text.setText(text.getText()+"8");
+
+            }
+        });
 
 
 
