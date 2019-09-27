@@ -139,6 +139,40 @@
 
 
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:text="8"
+            android:id="@+id/bt8"
+            android:textStyle="bold">
+
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:text="9"
+            android:id="@+id/bt9"
+            android:textStyle="bold">
+
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:text="*"
+            android:id="@+id/btmul"
+            android:textStyle="bold">
+
+        </Button>                <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:textSize="30sp"
+        android:text="8"
+        android:id="@+id/bt8"
+        android:textStyle="bold">
+
 
 
 
