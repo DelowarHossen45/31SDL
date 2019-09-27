@@ -60,6 +60,13 @@ public class MainActivity extends AppCompatActivity {
                 text.setText(null);
             }
         });
+        btfac.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                text.setText(text.getText()+".");
+            }
+        });
+        
 
     }
 
