@@ -302,6 +302,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btdel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!text.getText().toString().matches("")){
+                    String tmp = text.getText().toString();
+                    text.setText(tmp.substring(0,tmp.length()-1));
+                }
+            }
+        });
+
+
+
+    }
+
 
 
 
