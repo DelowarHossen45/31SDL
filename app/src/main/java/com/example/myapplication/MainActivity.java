@@ -158,6 +158,21 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        btsub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(text==null){
+                    text.setText("");
+                }
+                else{
+                    var1=Double.parseDouble(text.getText()+"");
+                    sub=true;
+                    text.setText(null);
+                }
+            }
+        });
+
+
 
 
 
