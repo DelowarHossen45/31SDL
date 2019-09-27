@@ -202,6 +202,35 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btadd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(text==null){
+                    text.setText("");
+                }
+                else{
+                    var1=Double.parseDouble(text.getText()+"");
+                    add=true;
+                    text.setText(null);
+                }
+            }
+        });
+
+        btdiv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(text==null){
+                    text.setText("");
+                }
+                else{
+                    var1=Double.parseDouble(text.getText()+"");
+                    div=true;
+                    text.setText(null);
+                }
+            }
+        });
+
+
 
 
 
