@@ -197,7 +197,15 @@
                         android:textStyle="bold">
 
                     </Button>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:text="%"
+                        android:id="@+id/btmod"
+                        android:textSize="30sp"
+                        android:textStyle="bold">
 
+                    </Button>
                 </LinearLayout>
 
             </LinearLayout>
