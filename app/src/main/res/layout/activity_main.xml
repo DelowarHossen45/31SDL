@@ -91,6 +91,14 @@
                     android:textStyle="bold"
                     android:textSize="30sp">
                 </Button>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:text="6"
+                    android:id="@+id/bt6"
+                    android:textStyle="bold"
+                    android:textSize="30sp">
+                </Button>
 
             </LinearLayout>
 
