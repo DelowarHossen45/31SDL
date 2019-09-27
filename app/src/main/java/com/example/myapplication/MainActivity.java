@@ -51,6 +51,16 @@ public class MainActivity extends AppCompatActivity {
         btequal=findViewById(R.id.btequal);
         btfac=findViewById(R.id.btfac);
         text=findViewById(R.id.text);
+
+
+
+        btclc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                text.setText(null);
+            }
+        });
+
     }
 
 }
