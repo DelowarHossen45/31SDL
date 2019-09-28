@@ -7,8 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import static java.lang.Math.sqrt;
+
 public class MainActivity extends AppCompatActivity {
-    Button bt1,bt2,bt3,bt4,bt5,bt6,bt7,bt8,bt9,bt0,btadd,btsub,btdiv,btdel,btclc,btequal,btmul,btfac,btmod,btans;
+    Button bt1,bt2,bt3,bt4,bt5,bt6,bt7,bt8,bt9,bt0,btadd,btsub,btdiv,btdel,btclc,btequal,btmul,btfac,btmod,btsqrt;
     double var1,var2;
     boolean add,sub,mul,div,mod;
     TextView text;
@@ -20,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         bt1=findViewById(R.id.bt1);
-        btans=findViewById(R.id.btans);
+        btsqrt=findViewById(R.id.btsqrt);
         bt2=findViewById(R.id.bt2);
 
         bt3 =findViewById(R.id.bt3);
@@ -270,34 +272,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btans.setOnClickListener(new View.OnClickListener() {
+        btsqrt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                var2 = Double.parseDouble(text.getText() + "");
-                if (add == true) {
-                    text.setText(var1 + var2 + "");
-                    add = false;
-                }
-                if (sub == true) {
-                    text.setText(var1 - var2 + "");
-                    sub = false;
-                }
-                if (mul == true) {
-                    text.setText(var1 * var2 + "");
-                    mul = false;
-                }
-                if (div == true) {
-                    text.setText(var1 / var2 + "");
-                    div = false;
-                }
-                if (mod == true) {
-                    if (var2 == 0) {
-                        text.setText("error");
-                    } else {
-                        text.setText(var1 % var2 + "");
-                        mod = false;
-                    }
-                }
+                var1=Double.parseDouble(text.getText()+"");
+                var2=sqrt(var1);
+                text.setText(var2+"");
+
 
             }
         });
