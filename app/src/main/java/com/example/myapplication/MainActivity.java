@@ -7,12 +7,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 import static java.lang.Math.sqrt;
 
 public class MainActivity extends AppCompatActivity {
     Button bt1,bt2,bt3,bt4,bt5,bt6,bt7,bt8,bt9,bt0,btadd,btsub,btdiv,btdel,btclc,btequal,btmul,btfac,btmod,btsqrt;
-    double var1,var2;
-    boolean add,sub,mul,div,mod;
+    double var1,var2,store;
+    boolean add,sub,mul,div,mod,equal;
     TextView text;
     @Override
 
@@ -72,6 +74,9 @@ public class MainActivity extends AppCompatActivity {
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(equal==true)
+                    text.setText("");
+                equal=false;
                 text.setText(text.getText()+"1");
 
             }
@@ -79,6 +84,9 @@ public class MainActivity extends AppCompatActivity {
         bt2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(equal==true)
+                    text.setText("");
+                equal=false;
                 text.setText(text.getText()+"2");
 
             }
@@ -87,6 +95,9 @@ public class MainActivity extends AppCompatActivity {
         bt3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(equal==true)
+                    text.setText("");
+                equal=false;
                 text.setText(text.getText()+"3");
 
             }
@@ -94,6 +105,9 @@ public class MainActivity extends AppCompatActivity {
         bt4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(equal==true)
+                    text.setText("");
+                equal=false;
                 text.setText(text.getText()+"4");
 
             }
@@ -102,6 +116,10 @@ public class MainActivity extends AppCompatActivity {
         bt5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(equal==true){
+                    text.setText("");
+                }
+                equal=false;
                 text.setText(text.getText()+"5");
 
             }
@@ -111,6 +129,10 @@ public class MainActivity extends AppCompatActivity {
         bt6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(equal==true) {
+                    text.setText("");
+                }
+                equal=false;
                 text.setText(text.getText()+"6");
 
             }
@@ -119,6 +141,9 @@ public class MainActivity extends AppCompatActivity {
         bt7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(equal==true)
+                    text.setText("");
+                equal=false;
                 text.setText(text.getText()+"7");
 
             }
@@ -126,6 +151,9 @@ public class MainActivity extends AppCompatActivity {
         bt8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(equal==true)
+                    text.setText("");
+                equal=false;
                 text.setText(text.getText()+"8");
 
             }
@@ -133,6 +161,9 @@ public class MainActivity extends AppCompatActivity {
         bt9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(equal==true)
+                    text.setText("");
+                equal=false;
                 text.setText(text.getText()+"9");
 
             }
@@ -141,6 +172,9 @@ public class MainActivity extends AppCompatActivity {
         bt0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(equal==true)
+                    text.setText("");
+                equal=false;
                 text.setText(text.getText()+"0");
 
             }
@@ -148,6 +182,7 @@ public class MainActivity extends AppCompatActivity {
         btadd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 if(text==null){
                     text.setText("");
                 }
@@ -163,6 +198,7 @@ public class MainActivity extends AppCompatActivity {
         btsub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 if(text==null){
                     text.setText("");
                 }
@@ -249,7 +285,9 @@ public class MainActivity extends AppCompatActivity {
                     mul = false;
                 }
                 if (div == true) {
-                    text.setText(var1 / var2 + "");
+                    store=var1 / var2;
+
+                    text.setText(new DecimalFormat("##.####").format(store));
                     div = false;
                 }
                 if (mod == true) {
@@ -269,7 +307,9 @@ public class MainActivity extends AppCompatActivity {
                         mod = false;
                     }
                 }
+                equal=true;
             }
+
         });
 
         btsqrt.setOnClickListener(new View.OnClickListener() {
